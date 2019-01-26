@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpha</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src = "./js/jquery.min.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src = "./js/gridify.js"></script>
+    <script src = "./js/gridify-min.js"></script>
+    <script src = "./js/toggle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=<0fcbba49-951b-4435-9244-5ebfd0919a39>&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap, myPlacemark;
+
+      function init() {
+          myMap = new ymaps.Map ("map", {
+          center: [51.741393, 36.199320],
+          zoom: 17
+      });
+
+      myPlacemark = new ymaps.Placemark([51.741393, 36.199320], {
+         content: 'Альфа', balloonContent: 'Реклманая компания Альфа'
+      });
+      myMap.geoObjects.add(myPlacemark);
+      }
+    </script>
+  </head>
+  <body>
+    <div class = "roof">
+      <div class = "roof-box">
+        <div class = "roof-media">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/vk.svg">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/instagram.svg">
+              </a>
+            </li>
+          </ul>
+          <div class = "roof-email">
+            <span>e-mail: promokursk@yandex.ru</span>
+          </div>
+        </div>
+        <div class="roof-info">
+          <span>Тел.: 30-60-10</span>
+          <span> г. Курск, ул. Володарского, д. 70, оф. 2/1</span>
+        </div>
+      </div>
+    </div>
+    <div class = "header" id = "main">
+      <div class = "header-logo">
+          <img src="./images/logo.svg">
+      </div>
+      <div class = "header-info">
+          <div class = "header-info-menu">
+            <ul class = "header-nav">
+                <li>
+                  <a href="#main">Главная</a>
+                </li>
+                <li>
+                  <a href="#services">Услуги</a>
+                </li>
+                <li>
+                  <a href="#works">Работы</a>
+                </li>
+                <li>
+                  <a href="#gallery">Галерея</a>
+                </li>
+                <li>
+                  <a href="#feedback">Контакты</a>
+                </li>
+              </ul>
+              <a class = "toggle-nav" href = "#">&#9776;</a>
+          </div>
+      </div>
+    </div>
+      <div class = "banners">
+        <div class = "banner1">
+        </div>
+        <div class = "banner2">
+        </div>
+        <div class = "banner3">
+        </div>
+      </div>
+      <div class = "services-wrapper" id = "services">
+        <h2> Наши услуги </h2>
+        <div class = "services">
+          <div class = "service">
+            <img src="./images/service1.svg">
+            <h3>Наружная реклама</h3>
+            <ul>
+              <li> Объёмные буквы</li>
+              <li> Штендеры</li>
+              <li> Баннеры</li>
+              <li> Световые короба</li>
+              <li> Вывески</li>
+              <li> Таблички</li>
+            </ul>
+          </div>
+          <div class = "service">
+            <img src="./images/service2.svg">
+            <h3>Интерьерная реклама</h3>
+            <ul>
+              <li> Объёмные буквы</li>
+              <li> Уголки потребителя</li>
+              <li> Указатели</li>
+              <li> Режимы работы</li>
+              <li> Таблички</li>
+              <li> Визитницы</li>
+              <li> Стенды</li>
+            </ul>
+          </div>
+          <div class = "service">
+            <img src="./images/service3.svg">
+            <h3>Широкоформатная печать</h3>
+            <ul>
+              <li> Баннерная ткань</li>
+              <li> Плёнка</li>
+              <li> Бумага</li>
+            </ul>
+          </div>
+          <div class = "service">
+            <img src="./images/service4.svg">
+            <h3>Интерьерная печать</h3>
+            <ul>
+              <li> Баннерная ткань</li>
+              <li> Плёнка</li>
+              <li> Бумага</li>
+              <li> Фотобумага</li>
+              <li> Холст</li>
+            </ul>
+          </div>
+          <div class = "service">
+            <img src="./images/service5.svg">
+            <h3>Полиграфия</h3>
+            <ul>
+              <li> Визитки</li>
+              <li> Буклеты</li>
+              <li> Листовки</li>
+              <li> Календари</li>
+              <li> Флаеры</li>
+            </ul>
+          </div>
+          <div class = "service">
+            <img src="./images/service6.svg">
+            <h3>Реклама в лифте</h3>
+            <div>
+              Размещение вашей рекламы на стендах в лифтах различных районов города Курска!
+            </div>
+          </div>
+          <div class = "service">
+            <img src="./images/service7.svg">
+            <h3>Реклама в конвертах</h3>
+            <div>
+              Ваша реклама в конверты вместе с квитанцией. От дизайна до адресата!
+            </div>
+          </div>
+          <div class = "service">
+            <img src="./images/service8.svg">
+            <h3>Плоттерная резка</h3>
+            <ul>
+              <li> Цветная плёнка</li>
+              <li> Наклейки печатные</li>
+              <li> Наклейки одноцветные</li>
+              <li> Трафареты</li>
+              <li> Флаеры</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class = "ourwork-wrapper" id = "works">
+        <h2> Наши работы </h2>
+        <div class = "ourwork-text">
+          Нам важно не только выполнить свою работу, но и добиться успеха.
+          Мы поможем обрести индивидуальный стиль и полностью реализовать
+          потенциал. Мы очень гордимся своими достижениями и с удовольствием
+          расскажем о них все,что вас интересует. Ознакомьтесь с нашими
+          проектами, чтобы получить представление о том, на что мы способны.
+        </div>
+        <div class = "ourwork">
+          <div class = "work">
+            <img src = "./images/work1.png">
+            <h3> Реклама в лифте </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work2.png">
+            <h3> Таблички ПВХ с печатью </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work3.png">
+            <h3> Световая вывеска </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work4.png">
+            <h3> Информационный стенд </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work5.png">
+            <h3> Листовки </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work6.png">
+            <h3> Табличка режим работы </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work7.png">
+            <h3> Карманный календарь </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work8.png">
+            <h3> Наклейки печать </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work9.png">
+            <h3> Наклейки печать </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work10.png">
+            <h3> Таблички на двери </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work11.png">
+            <h3> Магнитики </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work12.png">
+            <h3> Роспись стен </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work13.png">
+            <h3> Визитки </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work14.png">
+            <h3> Уличные таблички-знаки </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work15.png">
+            <h3> Таблички на школу </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work16.png">
+            <h3> Плоттерная порезка на мебели </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work17.png">
+            <h3> Клубные карты </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work18.png">
+            <h3> Информационная таблица-прайс </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work19.png">
+            <h3> Штендер </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work20.png">
+            <h3> Разработка дизайна </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work21.png">
+            <h3> Поклейка печати с порезкой </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work22.png">
+            <h3> Световая интерьерная вывеска </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work23.png">
+            <h3> Баннер для размещения на щите </h3>
+          </div>
+          <div class = "work">
+            <img src = "./images/work24.png">
+            <h3> Тонировка стёкол </h3>
+          </div>
+        </div>
+      </div>
+      <div class = "gallery-wrapper" id = "gallery">
+        <h2>Галерея</h2>
+        <div class="gallery">
+          <img id = "zoomimg" src="./images/gallery_1.png">
+          <img src="./images/gallery_2.png">
+          <img src="./images/gallery_3.png">
+          <img src="./images/gallery_4.png">
+          <img src="./images/gallery_5.png">
+          <img src="./images/gallery_6.png">
+          <img src="./images/gallery_7.png">
+          <img src="./images/gallery_8.png">
+          <img src="./images/gallery_9.png">
+          <img src="./images/gallery_10.png">
+          <img src="./images/gallery_11.png">
+          <img src="./images/gallery_12.png">
+          <img src="./images/gallery_13.png">
+          <img src="./images/gallery_14.png">
+          <img src="./images/gallery_15.png">
+          <img src="./images/gallery_16.png">
+          <img src="./images/gallery_17.png">
+          <img src="./images/gallery_18.png">
+          <img src="./images/gallery_19.png">
+          <img src="./images/gallery_20.png">
+          <img src="./images/gallery_21.png">
+          <img src="./images/gallery_22.png">
+          <img src="./images/gallery_23.png">
+          <img src="./images/gallery_24.png">
+          <img src="./images/gallery_25.png">
+          <img src="./images/gallery_26.png">
+          <img src="./images/gallery_27.png">
+          <img src="./images/gallery_28.png">
+        </div>
+      </div>
+      <div class = "feedback-wrapper" id = "feedback">
+        <h2>Отзывы наших клиентов</h2>
+        <div class = "comments">
+          <div class = "comment">
+            <img src="./images/user.svg">
+            <div class = "comments-text">
+              <h2> Мари Лейкунова </h2>
+              <div>Спасибо за вашу работу, грамотную консультацию и душевное
+                 отношение, видно, что вы любите свою работу.
+               </div>
+             </div>
+           </div>
+           <div class = "comment">
+             <img src="./images/user.svg">
+             <div class = "comments-text">
+               <h2> Мари Лейкунова </h2>
+               <div>Спасибо за вашу работу, грамотную консультацию и душевное
+                  отношение, видно, что вы любите свою работу.
+                </div>
+              </div>
+            </div>
+            <div class = "comment">
+              <img src="./images/user.svg">
+              <div class = "comments-text">
+                <h2> Мари Лейкунова </h2>
+                <div>Спасибо за вашу работу, грамотную консультацию и душевное
+                   отношение, видно, что вы любите свою работу.
+                 </div>
+               </div>
+             </div>
+        </div>
+        <h2> Наша цель - довольный клиент</h2>
+        <div class = "feedback-clients">
+          <div><img src="./images/client1.svg"></div>
+          <div><img src="./images/client2.svg"></div>
+          <div><img src="./images/client3.svg"></div>
+          <div><img src="./images/client5.svg"></div>
+          <div><img src="./images/client4.svg"></div>
+          <div><img src="./images/client6.svg"></div>
+          <div><img src="./images/client7.svg"></div>
+          <div><img src="./images/client8.svg"></div>
+        </div>
+      </div>
+      <div id = "map">
+      </div>
+      <div class = "footer">
+        <div class = "footer-info">
+          <div> адрес:<span> г. Курск, ул. Володарского, д.70, оф 2/1</span></div>
+          <div> тел.:<span>30-60-10 </span></div>
+        </div>
+        <h2> 2018 </h2>
+      </div>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script type="text/javascript" src="./slick/slick-banner.js"></script>
+      <script type="text/javascript" src="./slick/slick-comment.js"></script>
+  </body>
+</html>
