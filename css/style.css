@@ -300,18 +300,14 @@ body {
 
 /* Banner end */
 /* Services */
-.services-wrapper {
-  margin-top: 20px;
-}
-
 .services-box {
   display: flex;
-  justify-content: center;
-  padding: 50px 0;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
 .services-description {
-  width: 100%;
+  width: 75%;
 }
 
 .services-description h2 {
@@ -324,6 +320,7 @@ body {
 .services-description p {
   font-size: 24px;
   margin-bottom: 40px;
+  line-height: 1.5;
 }
 
 .services-description a {
@@ -338,7 +335,11 @@ body {
 }
 
 .services-description a:hover {
-  background-color: #E1B6CF;
+  background-color: #FFFFFF;
+  color: #333333;
+  border: 2px solid #333333;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
 }
 
 .services {
