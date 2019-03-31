@@ -620,76 +620,41 @@ body {
 }
 
 /* End Team */
-/* Our work */
-.ourwork-wrapper {
-  margin-top: 20px;
-  background-color: #F1F1F1;
-  padding-top: 30px;
-}
-
-.ourwork-wrapper h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #2E2E2E;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.ourwork-text {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.ourwork {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px auto 0;
-  max-width: 1440px;
-}
-
-.work {
-  width: 200px;
-  padding-bottom: 20px;
-  margin: 0 10px;
-}
-
-.work img {
-  width: 200px;
-  border-radius: 15px;
-}
-
-.work h3 {
-  font-size: 18px;
-  font-weight: 550;
-  color: #2E2E2E;
-  margin-top: 10px;
-  text-align: center;
-}
-
-/* Our work end */
 /* Gallery */
 .gallery-wrapper {
-  padding-top: 30px;
-  background-color: #F1F1F1;
+  padding-top: 20px;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
-.gallery-wrapper h2 {
+.gallery-wrapper>h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #2E2E2E;
+  margin: 40px 0;
   text-align: center;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-wrapper>h2::after {
+  content: "";
+  height: 2px;
+  width: 45px;
+  background: #FF69B4;
+  margin: 25px auto 0;
 }
 
 .gallery {
-  max-width: 1440px;
   margin: 20px auto;
-  height: 700px;
-  overflow: hidden;
+  max-width: 1440px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.picture {
+  margin: 10px;
 }
 
 /* Gallery end */
@@ -705,54 +670,6 @@ body {
   color: #2E2E2E;
   text-align: center;
   margin-bottom: 20px;
-}
-
-.comments {
-  max-width: 1440px;
-  margin: 50px auto 80px;
-  position: relative;
-  padding: 0 10%;
-}
-
-.comment {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.comments img {
-  width: 100px;
-  text-align: left;
-}
-
-.comments-text {
-  font-size: 24px;
-  color: #2E2E2E;
-  padding: 0 20px;
-}
-
-.comments h2 {
-  font-size: 36px;
-  font-weight: 550px;
-  text-align: left;
-}
-
-.prev-comment,
-.next-comment {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.prev-comment {
-  left: 0;
-}
-
-.next-comment {
-  right: 0;
-  bottom: 2%;
 }
 
 .feedback-clients {
